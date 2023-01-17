@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Onest";
+  src: url("../public/assets/fonts/OnestRegular1602-hint.woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("../public/assets/fonts/OnestLight1602-hint.woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("../public/assets/fonts/OnestBlack1602-hint.woff");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("../public/assets/fonts/OnestExtraBold1602-hint.woff");
+  font-weight: 650;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("../public/assets/fonts/OnestMedium1602-hint.woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("../public/assets/fonts/OnestThin1602-hint.woff");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("../public/assets/fonts/OnestBold1602-hint.woff");
+  font-weight: 700;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Onest";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.layout {
+  max-width: 1920px;
+}
+
+.item__category {
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  background: #ffffff;
+  margin: 12px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+
+
+.ff-onest {
+  font-family: "Onest";
+}
+
+.bg-color-header {
+  background: rgb(232, 239, 245)
+}
+
+.navbar__top {
+  display: flex;
+}
+
+.navbar__top a {
+  padding-right: 24px;
+}
+
+.navbar__top a:last-child {
+  padding-right: 0;
+}
+
+.interface .imginterface {
+  padding-right: 24px;
+}
+
+.interface .imginterface:nth-of-type(4) {
+  padding-right: 13px;
+}
+

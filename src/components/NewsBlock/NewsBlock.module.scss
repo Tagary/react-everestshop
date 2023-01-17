@@ -1,0 +1,21 @@
+$gray_text: #878C9E;
+$blue_tags: #2A79CC;
+
+.viewers {
+    color: $gray_text;
+}
+
+.hestags {
+
+    color: $blue_tags;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 18px;
+    padding-right: 24px;
+
+}
+
+
+.hestags:last-child {
+    padding-right: 0;
+}

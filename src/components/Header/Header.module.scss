@@ -1,0 +1,10 @@
+.navbar__top {
+    display: flex;
+    a {
+        padding-right: 24px;
+      }
+      a:last-child {
+        padding-right: 0;
+      }
+  }
+  
