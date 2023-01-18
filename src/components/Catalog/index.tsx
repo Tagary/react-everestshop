@@ -10,7 +10,7 @@ const Catalog = () => {
             <img src="assets/images/catalog/emali.png" alt="" />
           </div>
           <div className="pl-8 font-extrabold">ЭМАЛИ</div>
-          <div className="p-8 flex flex-wrap">
+          <div className="p-8 flex flex-wrap item">
             <div className="item__category">Аклидные эмали</div>
             <div className="item__category">Акриловые эмали</div>
             <div className="item__category">Нитро эмали</div>

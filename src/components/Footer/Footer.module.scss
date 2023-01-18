@@ -1,0 +1,17 @@
+.footer {
+    background: url('../../../public/assets/images/footer/bg.png'), #091F3A;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+}
+
+.footer__link {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    a {
+        color: #fff;
+    }
+}
