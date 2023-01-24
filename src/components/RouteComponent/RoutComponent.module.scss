@@ -1,0 +1,30 @@
+.route {
+    position: relative;
+    &__list {
+        display: flex;
+        &_item {
+            display: flex;
+            color: #2A79CC;
+            font-size: 12px;
+            line-height: 18px;
+            text-transform: uppercase;
+            padding-right: 30px;
+        }
+        &_item::before {
+            position: absolute;
+            content: '';
+            width: 4px;
+            height: 4px;
+            background-color: #2A79CC;
+            border-radius: 50%;
+            top: 25%;
+
+            transform: translate3d(-17px, 2px, 0 );
+        }
+        &_item:nth-child(1)::before {
+            position: unset;
+            content: unset;
+        }
+    }
+    
+}

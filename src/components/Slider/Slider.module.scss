@@ -1,0 +1,30 @@
+.slider {
+
+    background-repeat: no-repeat;
+    min-height: 550px;
+    background-size: cover;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+.sliderimg {
+    background: url('../../../public/assets/images/slider/bg.png');
+    background-size: cover;
+}
+
+.sliderimg2 {
+    background: url('../../../public/assets/images/slider/bg2.png');
+    background-size: cover;
+}
+
+.slider__arrow {
+    display: flex;
+    div {
+        &:first-of-type {
+            padding-right: 12px;
+        }
+    }
+}

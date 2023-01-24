@@ -78,12 +78,18 @@ const Footer = () => {
           </div>
           <div className="flex items-center mt-10 justify-between">
             <div className="flex text-white ">
-              <div className="pr-[24px] cursor-pointer">ПЕРСОЛАНЬНЫЕ ДАННЫЕ</div>
-              <div className="pr-[24px] cursor-pointer">УСЛОВИЯ ПОЛЬЗОВАТЕЛЬСКОГО СОГЛАШЕНИЯ</div>
-              <div className="cursor-pointer">УСЛОВИЯ ПРОДАЖИ</div>
+              <a href="" className="pr-[24px] cursor-pointer">
+                ПЕРСОЛАНЬНЫЕ ДАННЫЕ
+              </a>
+              <a href="" className="pr-[24px] cursor-pointer">
+                УСЛОВИЯ ПОЛЬЗОВАТЕЛЬСКОГО СОГЛАШЕНИЯ
+              </a>
+              <a href="" className="cursor-pointer">
+                УСЛОВИЯ ПРОДАЖИ
+              </a>
             </div>
             <div className="flex">
-              <div className="text-[#878C9E]">Разработка сайта</div>
+              <div className="text-[#878C9E] pr-4">Разработка сайта</div>
               <div>
                 <img src="assets/images/footer/sitecreate.png" alt="" />
               </div>

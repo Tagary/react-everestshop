@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Catalog = () => {
+const CatalogComponent = () => {
   return (
     <div className="max-w-[86rem] m-auto mt-40">
       <div className="text-black text-[40px] mb-12 font-extrabold">КАТАЛОГ</div>
@@ -26,4 +26,4 @@ const Catalog = () => {
   );
 };
 
-export default Catalog;
+export default CatalogComponent;

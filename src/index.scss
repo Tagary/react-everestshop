@@ -106,3 +106,8 @@ code {
   padding-right: 13px;
 }
 
+a {
+  &:hover {
+    color: #2A79CC;
+  }
+}

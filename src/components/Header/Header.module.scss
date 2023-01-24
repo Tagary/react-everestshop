@@ -8,3 +8,27 @@
       }
   }
   
+.imginterface  {
+  padding-right: 24px;
+  svg {
+    cursor: pointer;
+      &:hover {
+        fill: #0E192E;
+        opacity: 0.8;
+      }
+  }
+ 
+}
+
+.btn__search {
+  padding: 11px 24px;
+  font-weight: 800;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background: rgba(14, 25, 46, 0.1);
+
+  }
+}
