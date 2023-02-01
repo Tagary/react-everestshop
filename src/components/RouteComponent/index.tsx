@@ -8,6 +8,7 @@ const RouteComponent = () => {
       <div className={styles.route}>
         <div className={styles.route__list}>
           <span className={styles.route__list_item}>Главная</span>
+          <span className={styles.route__list_item}>ЭМАЛИ</span>
         </div>
       </div>
     </div>

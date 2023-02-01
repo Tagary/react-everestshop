@@ -1,0 +1,13 @@
+<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g opacity="0.5">
+<rect width="16" height="16" transform="translate(0 0.5)" fill="url(#pattern0)"/>
+<path d="M2.29552 14.2051C1.9017 13.8119 1.9017 13.1745 2.29552 12.7813L12.2785 2.81464C12.6723 2.42146 13.3108 2.42146 13.7046 2.81464C14.0985 3.20781 14.0985 3.84527 13.7046 4.23845L3.72166 14.2051C3.32784 14.5983 2.68933 14.5983 2.29552 14.2051Z" fill="white"/>
+<path d="M2.29536 2.79488C2.68918 2.40171 3.32769 2.40171 3.7215 2.79488L13.7045 12.7616C14.0983 13.1547 14.0983 13.7922 13.7045 14.1854C13.3107 14.5785 12.6722 14.5785 12.2783 14.1854L2.29536 4.21869C1.90155 3.82552 1.90155 3.18805 2.29536 2.79488Z" fill="white"/>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_873_3626"/>
+</pattern>
+<image id="image0_873_3626" width="1" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAQSURBVHgBAQUA+v8AAAAAAAAFAAFkeJU4AAAAAElFTkSuQmCC"/>
+</defs>
+</svg>

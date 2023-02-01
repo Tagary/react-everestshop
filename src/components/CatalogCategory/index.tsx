@@ -5,7 +5,7 @@ const CatalogCategory = () => {
   const propNameclick = 'Эмали';
 
   return (
-    <div className="max-w-[86rem] m-auto mt">
+    <div className="max-w-[86rem] m-auto">
       <div className="font-extrabold text-5xl mt-16 mb-12">{propNameclick}</div>
       <div className={styles.catalog}>
         <div className={styles.catalog__item}>
