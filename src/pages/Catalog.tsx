@@ -3,9 +3,9 @@ import CatalogCategory from '../components/CatalogCategory';
 
 const Catalog = () => {
   return (
-    <div>
+    <>
       <CatalogCategory />
-    </div>
+    </>
   );
 };
 

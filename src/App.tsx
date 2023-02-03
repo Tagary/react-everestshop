@@ -1,9 +1,9 @@
 import React from 'react';
-import ListProduct from './components/ListProduct';
 import RootContainer from './components/RootContainer';
 import Catalog from './pages/Catalog';
-
+import ListProduct from './pages/ListProduct';
 import Main from './pages/Main';
+import Product from './pages/Product';
 
 function App() {
   return (
@@ -11,7 +11,8 @@ function App() {
       <RootContainer>
         {false && <Main />}
         {false && <Catalog />}
-        {true && <ListProduct />}
+        {false && <ListProduct />}
+        {true && <Product />}
       </RootContainer>
     </div>
   );

@@ -1,0 +1,80 @@
+.describe {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    &__left {
+        max-width: 880px;
+        width: 100%;
+    }
+
+
+    &__title {
+        font-size: 36px;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-bottom: 16px;
+    }
+    &__text {
+        
+    }
+    &__features {
+        margin-top: 67px;
+    }
+    &__feature {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 800;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+    }
+
+
+
+
+
+    &__right {
+        padding: 32px;
+        max-width: 312px;
+        width: 100%;
+        border: 1px solid #D8E1E1;
+        border-radius: 4px;
+        height: 100%;
+    }
+    &__img {
+        margin-bottom: 32px;
+    }
+    &__ask {
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 21px;
+    }
+    &__links {
+        margin-top: 32px;
+        padding: 14px 24px;
+        background-color: #2A79CC;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    &__lists {
+
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        &:last-of-type {
+            margin-bottom: 0px;
+        }
+        &_charac {
+            color: #878C9E;
+        }
+        &_about {
+            max-width: 424px;
+            width: 100%;
+        }
+    }
+}

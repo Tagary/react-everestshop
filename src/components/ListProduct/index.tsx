@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './ListProduct.module.scss';
 import classNames from 'classnames';
 
-const ListProduct = () => {
+const ListProductComponent = () => {
   const index1 = 'dsadsa';
   return (
     <div className="max-w-[86rem] m-auto mt-16">
@@ -372,4 +372,4 @@ const ListProduct = () => {
   );
 };
 
-export default ListProduct;
+export default ListProductComponent;
