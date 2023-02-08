@@ -6,7 +6,7 @@ const News = () => {
   const news = 'Dulux Diamond Max Protect';
   const hestags = ['АКЗОНОБЕЛ', 'ИНТЕРЬЕРРНЫЕ КРАСКИ'];
   return (
-    <div className="max-w-[86rem] m-auto mt-40">
+    <div className="max-w-[82.5rem] m-auto mt-40">
       <div className="text-black text-[40px] mb-12 font-extrabold">Новости</div>
       <div className="flex flex-wrap mb-[100px]">
         <div className="max-w-xs mb-8 pr-6">

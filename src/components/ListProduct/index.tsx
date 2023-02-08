@@ -5,7 +5,7 @@ import classNames from 'classnames';
 const ListProductComponent = () => {
   const index1 = 'dsadsa';
   return (
-    <div className="max-w-[86rem] m-auto mt-16">
+    <div className="max-w-[82.5rem] m-auto mt-16">
       <div>Алкидные эмали</div>
       <div className={styles.list}>
         <div className={styles.list__filter}>

@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 const Subdirectory = () => {
   return (
-    <div className="max-w-[86rem] m-auto ">
+    <div className="max-w-[82.5rem] m-auto ">
       <div className="flex justify-between">
         <div className={classNames('pt-8', { [styles.categories]: true })}>
           <div

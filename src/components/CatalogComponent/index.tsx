@@ -2,7 +2,7 @@ import React from 'react';
 
 const CatalogComponent = () => {
   return (
-    <div className="max-w-[86rem] m-auto mt-40">
+    <div className="max-w-[82.5rem] m-auto mt-40">
       <div className="text-black text-[40px] mb-12 font-extrabold">КАТАЛОГ</div>
       <div className="flex flex-wrap">
         <div className="card__item bg-[#E8EFF5] rounded-[4px] max-w-[420px] mr-6 mb-8">

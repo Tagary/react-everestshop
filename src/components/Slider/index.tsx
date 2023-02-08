@@ -10,7 +10,7 @@ const Slider = () => {
   const handleArrowRight = () => {};
 
   return (
-    <div className="max-w-[86rem] m-auto mt-8">
+    <div className="max-w-[82.5rem] m-auto mt-8">
       <div
         className={classNames(styles.slider, {
           [styles.sliderimg]: index === 1,

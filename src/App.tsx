@@ -1,8 +1,10 @@
 import React from 'react';
 import RootContainer from './components/RootContainer';
+import Cart from './pages/Cart';
 import Catalog from './pages/Catalog';
 import ListProduct from './pages/ListProduct';
 import Main from './pages/Main';
+import PersonalArea from './pages/PersonalArea';
 import Product from './pages/Product';
 
 function App() {
@@ -12,7 +14,9 @@ function App() {
         {false && <Main />}
         {false && <Catalog />}
         {false && <ListProduct />}
-        {true && <Product />}
+        {false && <Product />}
+        {false && <Cart />}
+        {true && <PersonalArea />}
       </RootContainer>
     </div>
   );

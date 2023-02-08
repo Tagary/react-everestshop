@@ -4,7 +4,7 @@ import styles from './Footer.module.scss';
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <div className="max-w-[86rem] m-auto mt-40 pt-[100px] pb-[60px]">
+      <div className="max-w-[82.5rem] m-auto mt-40 pt-[100px] pb-[60px]">
         <div className="flex justify-between">
           <div className="max-w-[450px]">
             <img src="assets/images/logo.png" alt="" />

@@ -8,7 +8,7 @@ import classNames from 'classnames';
 
 const ProductComponent = () => {
   return (
-    <div className="max-w-[86rem] m-auto mt-16">
+    <div className="max-w-[82.5rem] m-auto mt-16">
       <div className={styles.product}>
         <div className={styles.product__article}>
           DULUX MASTER 30 BC 2,3 Л. КРАСКА АЛК. ПОЛУМАТОВАЯ Б/ЦВ 5181597
@@ -100,9 +100,9 @@ const ProductComponent = () => {
         <div className={styles.links__link}>Отзывы</div>
         <div className={styles.links__link}>Вопрос-ответ</div>
       </div>
-      {true && <Describe />}
+      {false && <Describe />}
       {false && <Reviwes />}
-      {false && <Ask />}
+      {true && <Ask />}
     </div>
   );
 };

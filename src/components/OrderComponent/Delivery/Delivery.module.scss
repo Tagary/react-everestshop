@@ -1,0 +1,144 @@
+.way {
+    &__title {
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 48px;
+     }
+    &__signin {
+        margin-top: 48px;
+        display: flex;
+        align-items: center;
+        &_img {
+            margin-right: 32px;
+        }
+    }
+    &__data {
+        margin-top: 48px;
+        padding: 48px;
+        border: 1px solid #D8E1EA;
+        border-radius: 4px;
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+
+    &__article {
+        color: #2A79CC;
+        font-weight: 800;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    &__triangle {
+        margin-right: 24px;
+        position: relative;
+        width:0;
+        height:0;
+        border-top: 54px solid #2A79CC;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom:0;
+        &_text {
+            position: absolute;
+            top: -45px;
+            left: -3px;
+            font-weight: 800;
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+
+    &__choice {
+        margin-top: 40px;
+        display: flex;
+        gap: 32px;
+        border-bottom: 1px solid #D8E1EA;
+    }
+
+    &__face {
+        font-size: 18px;
+        font-weight: 800;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    &__individual {
+        padding-bottom: 33px;
+        border-bottom: 2px solid #2A79CC;
+    }
+    &__buisnes {
+        padding-bottom: 33px;
+        border-bottom: 2px solid #2A79CC;
+    }
+
+    &__form {
+        margin: 32px auto;
+    }
+    &__checkbox {
+
+        &_item {
+            margin-right: 8px;
+        }
+    }
+
+    &__deliver {
+        margin-top: 48px;
+        padding: 48px;
+        border: 1px solid #D8E1EA;
+        border-radius: 4px;
+    }
+    &__payment {
+        margin-top: 48px;
+        padding: 48px;
+        border: 1px solid #D8E1EA;
+        border-radius: 4px;
+    }
+    &__way {
+        display: flex;
+        gap: 16px;
+        margin-top: 40px;
+    }
+    &__item {
+        padding: 22px 24px;
+        border: 2px solid #D8E1EA;
+        border-radius: 4px;
+        max-width: 340px;
+        cursor: pointer;
+        width: 100%;
+        &_active {
+            border: 2px solid #2A79CC;  
+        }
+        label {
+            cursor: pointer;
+        }
+        input {
+            cursor: pointer;
+            margin-right: 10px;
+
+        }
+    }
+    &__delivery {
+        display: flex;
+        gap: 16px;
+        margin-top: 40px;
+        &_style {
+            display: flex;
+            margin-top: 31px;
+            justify-content: space-between;
+        }
+        &_color {
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 21px;
+        }
+        &_more {
+            color: #878C9E;
+        }
+        &_free {
+            font-weight: 800;
+        }
+    }
+    &__area {
+        margin-top: 32px;
+    }
+}

@@ -1,0 +1,39 @@
+.deliver {
+    &__select {
+        max-width: 1220px;
+        width: 100%;
+        background-color: #E8EFF5;
+        padding: 17px 16px;
+        outline: none;
+        cursor: pointer;
+    }
+    &__position {
+        margin-top: 16px;
+        display: flex;
+        gap: 16px;
+        input {
+            padding: 17px 16px;
+            background-color: #E8EFF5;
+            border-radius: 4px;
+            &:focus-visible {
+                outline: none;
+            }
+        }
+    }
+    &__street {
+        max-width: 810px;
+        width: 100%;
+    }
+    &__text {
+        margin-top: 16px;
+    }
+    &__textarea {
+        max-width: 1220px;
+        padding: 17px 16px;
+        width: 100%;
+        background-color: #E8EFF5;
+        outline: none;
+        border-radius: 4px;
+        resize: none;
+    }
+}
