@@ -17,6 +17,7 @@ function App() {
         {false && <Product />}
         {false && <Cart />}
         {true && <PersonalArea />}
+        {/* delivery, payment, pricelist, wholesalers,  vacansy, news, contacts */}
       </RootContainer>
     </div>
   );

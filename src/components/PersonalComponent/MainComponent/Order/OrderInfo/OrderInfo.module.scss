@@ -1,0 +1,105 @@
+.orderinfo {
+    &__article {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+        &_about {
+            font-size: 24px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        &_back {
+            color: #878C9E;
+            cursor: pointer;
+        }
+    }
+    &__informations {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__leftcol {
+        max-width: 376px;
+        width: 100%;
+    }
+    &__rightcol {
+        max-width: 488px;
+        width: 100%;
+    }
+    &__item {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 20px;
+        &:last-of-type {
+            margin-bottom: 0px;
+        }
+        flex-direction: column;
+        &_title {
+            font-size: 14px;
+            color: #878C9E;
+        }
+    }
+    &__products {
+        display: grid;
+        border: 1px solid #D8E1EA;
+    }
+    &__product {
+        padding: 24px;
+        border-bottom: 1px solid #D8E1EA;
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+    &__articule {
+        font-size: 14px;
+        color: #878C9E;
+        &_nums {
+            color: #000;
+        }
+    }
+    &__prices {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    &__quantity {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        &_circle {
+            background-color: #2A79CC;
+            border-radius: 50%;
+            width: 4px;
+            height: 4px;
+        }
+    }
+    &__price {
+        font-size: 24px;
+        font-weight: 800;
+        &_val {
+            font-size: 16px;
+            font-weight: normal;
+        }
+    }
+    &__results {
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__result {
+        font-size: 40px;
+        font-weight: 800;
+        &_val {
+            font-size: 16px;
+            font-weight: normal;
+        }
+    }
+    &__button {
+        padding: 18px 32px;
+        color: #fff;
+        text-transform: uppercase;
+        background-color: #2A79CC;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+}

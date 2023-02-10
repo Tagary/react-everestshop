@@ -1,0 +1,41 @@
+.listorder {
+    &__article {
+        font-size: 24px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+        &_sup {
+            font-size: 16px;
+            font-weight: normal;
+            color: #2A79CC;
+            padding-left: 8px;
+        }
+    }
+    &__test {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__paragraph {
+        display: grid;
+        grid-template-columns: 150px 225px 225px 284px;
+        padding-bottom: 16px;
+        border-bottom: 3px solid #2A79CC;
+        &_item {
+            color: #878C9E;
+            font-size: 14px;
+        }
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 150px 225px 225px 250px 35px;
+        padding: 20px 0;
+        border-bottom: 1px solid #D8E1EA;
+        &_num {
+            color: #2A79CC;
+        }
+        &_arrow {
+            cursor: pointer;
+        }
+    }
+}

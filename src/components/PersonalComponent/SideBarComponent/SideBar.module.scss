@@ -1,0 +1,30 @@
+.sidebar {
+    max-width: 220px;
+    width: 100%;
+
+    &__item {
+        display: flex;
+        gap: 8px;
+        padding: 12px 16px; 
+        align-items: center;
+        cursor: pointer;
+        &:last-of-type {
+            margin-top: 16px;
+        }
+        &_active {
+            background-color: #E8EFF5;
+            border-radius: 4px;
+        }
+    }
+    &__icons {
+        fill: #C2CBD3;
+        &_active {
+            fill: #2A79CC;
+        }
+    }
+    &__text {
+        &_active {
+            color: #2A79CC;
+        }
+    }
+}
