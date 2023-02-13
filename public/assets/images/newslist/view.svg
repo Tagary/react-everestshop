@@ -1,0 +1,11 @@
+<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="16" height="16" transform="translate(0 0.5)" fill="url(#pattern0)"/>
+<path d="M13.7781 7.90686C14.074 8.26114 14.074 8.73943 13.7781 9.09314C12.8462 10.2069 10.6104 12.5 8.0001 12.5C5.38979 12.5 3.15398 10.2069 2.22208 9.09314C2.07814 8.9235 2 8.71481 2 8.5C2 8.28519 2.07814 8.0765 2.22208 7.90686C3.15398 6.79314 5.38979 4.5 8.0001 4.5C10.6104 4.5 12.8462 6.79314 13.7781 7.90686Z" stroke="#8595A7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.0001 10.2143C9.03427 10.2143 9.87263 9.44677 9.87263 8.5C9.87263 7.55323 9.03427 6.78571 8.0001 6.78571C6.96592 6.78571 6.12756 7.55323 6.12756 8.5C6.12756 9.44677 6.96592 10.2143 8.0001 10.2143Z" stroke="#8595A7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2205_2686"/>
+</pattern>
+<image id="image0_2205_2686" width="1" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAQSURBVHgBAQUA+v8AAAAAAAAFAAFkeJU4AAAAAElFTkSuQmCC"/>
+</defs>
+</svg>

@@ -713,10 +713,6 @@ video {
   max-width: 426px;
 }
 
-.max-w-7xl {
-  max-width: 80rem;
-}
-
 .max-w-5xl {
   max-width: 64rem;
 }
@@ -771,22 +767,6 @@ video {
 }
 
 .border {
-  border-width: 1px;
-}
-
-.border-2 {
-  border-width: 2px;
-}
-
-.border-4 {
-  border-width: 4px;
-}
-
-.border-0 {
-  border-width: 0px;
-}
-
-.border-\[1px\] {
   border-width: 1px;
 }
 

@@ -2,6 +2,7 @@ import React from 'react';
 import RootContainer from './components/RootContainer';
 import Cart from './pages/Cart';
 import Catalog from './pages/Catalog';
+import HeaderPages from './pages/HeaderPages';
 import ListProduct from './pages/ListProduct';
 import Main from './pages/Main';
 import PersonalArea from './pages/PersonalArea';
@@ -16,8 +17,9 @@ function App() {
         {false && <ListProduct />}
         {false && <Product />}
         {false && <Cart />}
-        {true && <PersonalArea />}
-        {/* delivery, payment, pricelist, wholesalers,  vacansy, news, contacts */}
+        {false && <PersonalArea />}
+        {true && <HeaderPages />}
+        {/* wholesalers,  vacansy, news, contacts */}
       </RootContainer>
     </div>
   );

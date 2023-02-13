@@ -1,0 +1,70 @@
+.vacancy {
+    &__title {
+        font-size: 48px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 48px;
+    }
+    &__item {
+        margin-bottom: 24px;
+        background-color: #E8EFF5;
+        border-radius: 4px;
+        padding: 32px;
+        &_active {
+            background-color: #fff;
+            border: 1px solid #D8E1EA;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    &__head {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__article {
+        font-size: 24px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    &__describe {
+        font-size: 16px;
+    }
+    &__img {
+        cursor: pointer;
+    }
+    &__describtions {
+        margin-top: 69px;
+        display: none;
+        &_active {
+            display: block;
+        }
+    }
+    &__about {
+        margin-bottom: 48px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        &_text {
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__list {
+        li {
+            padding-bottom: 16px;
+            &:last-of-type {
+                padding-bottom: 0;
+            }
+        }
+    }
+    &__slach {
+        font-size: 16px;
+        padding-right: 16px;
+        color: #2A79CC;
+        font-weight: 800;
+    }
+}

@@ -1,0 +1,109 @@
+.delivery {
+    &__information {
+        background-color: #E8EFF5;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 160px;
+    }
+    &__text {
+        padding: 60px;
+    }
+
+    &__article {
+        font-size: 48px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+    }
+
+    &__next {
+        display: flex;
+        align-items: center;
+    }
+    &__slach {
+        font-size: 60px;
+        color:#2A79CC;
+    }
+
+    &__textnext {
+        font-size: 18px;
+        font-weight: 800;
+        text-transform: uppercase;
+        padding-right: 16px;
+    }
+
+    &__about {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        max-width: 872px;
+        width: 100%;
+    }
+
+
+    &__title {
+        font-size: 36px;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+
+
+    &__list {
+        li {
+            font-size: 18px;
+            &::before {
+                content: '/';
+                padding-right: 16px;
+                color: #2A79CC;
+                font-weight: bold;
+            }
+        }
+    }
+
+ 
+    &__item {
+        margin-bottom: 100px;
+        &:last-of-type {
+            margin-right: 0px;
+        }
+    }
+
+
+    &__right {
+        padding: 32px;
+        max-width: 312px;
+        width: 100%;
+        border: 1px solid #D8E1E1;
+        border-radius: 4px;
+        height: 100%;
+    }
+    &__img {
+        margin-bottom: 32px;
+    }
+    &__ask {
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 21px;
+    }
+    &__links {
+        margin-top: 32px;
+        padding: 14px 24px;
+        background-color: #2A79CC;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}

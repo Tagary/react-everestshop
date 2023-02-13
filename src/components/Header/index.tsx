@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <header className="bg-color-header min-h-[171px]">
-      <div className="max-w-7xl pt-[32px] pb-[32px] m-auto flex">
+      <div className="max-w-[82.5rem] pt-[32px] pb-[32px] m-auto flex">
         <div className="pr-16 flex items-center">
           <img className="min-w-[192px] w-full" src="assets/images/header/logo.png" alt="" />
         </div>
