@@ -1,11 +1,10 @@
 import React from 'react';
+import NewsComponent from '../components/NewsComponent';
 
 const News = () => {
   return (
-    <div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div className="max-w-[82.5rem] m-auto mt-16">
+      <NewsComponent />
     </div>
   );
 };

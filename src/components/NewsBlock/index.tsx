@@ -11,13 +11,13 @@ const News = () => {
       <div className="flex flex-wrap mb-[100px]">
         <div className="max-w-xs mb-8 pr-6">
           <div className="">
-            <img src="assets/images/news/image10.png" alt="" />
+            <img src="assets/images/mininews/img10.png" alt="" />
           </div>
           <div className="flex mb-3">
             <div className={styles.viewers}>{date}</div>
             <div className="flex items-center pl-6">
               <div className="pr-2">
-                <img src="assets/images/news/viewers.svg" alt="" />
+                <img src="assets/images/mininews/viewers.svg" alt="" />
               </div>
               <div className={styles.viewers}>{viewers}</div>
             </div>
@@ -35,7 +35,7 @@ const News = () => {
         <div className="flex text-lg text-black">
           <div className="pr-4 text-lg font-extrabold">ВСЕ НОВОСТИ</div>
           <div>
-            <img src="assets/images/news/arrow-right.svg" alt="" />
+            <img src="assets/images/mininews/arrow-right.svg" alt="" />
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import Catalog from './pages/Catalog';
 import HeaderPages from './pages/HeaderPages';
 import ListProduct from './pages/ListProduct';
 import Main from './pages/Main';
+import News from './pages/News';
 import PersonalArea from './pages/PersonalArea';
 import Product from './pages/Product';
 
@@ -18,8 +19,8 @@ function App() {
         {false && <Product />}
         {false && <Cart />}
         {false && <PersonalArea />}
-        {true && <HeaderPages />}
-        {/* wholesalers,  vacansy, news, contacts */}
+        {false && <HeaderPages />}
+        {true && <News />}
       </RootContainer>
     </div>
   );
