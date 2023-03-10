@@ -1,6 +1,10 @@
 import React from 'react';
+import { catalogAPI } from '../../redux/services/CatalogService';
 
 const CatalogComponent = () => {
+  const { data } = catalogAPI.useFetchAllCatalogQuery('');
+  console.log(data);
+
   return (
     <div className="max-w-[82.5rem] m-auto mt-40">
       <div className="text-black text-[40px] mb-12 font-extrabold">КАТАЛОГ</div>

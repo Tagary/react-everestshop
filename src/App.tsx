@@ -1,26 +1,16 @@
-import React from 'react';
+import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom';
 import RootContainer from './components/RootContainer';
-import Cart from './pages/Cart';
-import Catalog from './pages/Catalog';
-import HeaderPages from './pages/HeaderPages';
-import ListProduct from './pages/ListProduct';
-import Main from './pages/Main';
-import News from './pages/News';
-import PersonalArea from './pages/PersonalArea';
-import Product from './pages/Product';
 
 function App() {
+  let { pathname } = useLocation();
+
   return (
     <div className="App">
-      <RootContainer>
-        {false && <Main />}
-        {false && <Catalog />}
-        {false && <ListProduct />}
-        {false && <Product />}
-        {false && <Cart />}
-        {false && <PersonalArea />}
-        {false && <HeaderPages />}
-        {true && <News />}
+      <RootContainer pathname={pathname}>
+        <div className="max-w-[82.5rem] m-auto mt-16">
+          <ScrollRestoration />
+          <Outlet />
+        </div>
       </RootContainer>
     </div>
   );

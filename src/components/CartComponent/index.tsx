@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './CartComponent.module.scss';
 
 const CartComponent = () => {
@@ -61,7 +62,9 @@ const CartComponent = () => {
               5 465 <span className={styles.cart__coutcart_val}>₽</span>
             </div>
           </div>
-          <div className={styles.cart__button}>Оформить заказ</div>
+          <Link to={'order'}>
+            <div className={styles.cart__button}>Оформить заказ</div>
+          </Link>
         </div>
       </div>
     </div>

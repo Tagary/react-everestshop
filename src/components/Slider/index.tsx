@@ -1,13 +1,18 @@
 import { useState } from 'react';
 import styles from './Slider.module.scss';
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 
 const Slider = () => {
-  const [index, setIndex] = useState<number>(2);
+  const [index, setIndex] = useState<number>(1);
 
-  const handleArrowLeft = () => {};
+  const handleArrowLeft = () => {
+    setIndex(index <= 1 ? index + 1 : index - 1);
+  };
 
-  const handleArrowRight = () => {};
+  const handleArrowRight = () => {
+    setIndex(index >= 2 ? index - 1 : index + 1);
+  };
 
   return (
     <div className="max-w-[82.5rem] m-auto mt-8">
@@ -21,15 +26,17 @@ const Slider = () => {
         </div>
         <div className="flex justify-between">
           <div>
-            <div className="flex justify-center items-center">
-              <div className="text-blue text-[65px] text-blue-500">/</div>
-              <div className="flex text-lg text-black">
-                <div className="pr-4 text-lg font-extrabold text-white">УЗНАТЬ ПОДРОБНЕЕ</div>
-                <div>
-                  <img src="assets/images/slider/arrow-right.svg" alt="" />
+            <Link to="delivery">
+              <div className="flex justify-center items-center">
+                <div className="text-blue text-[65px] text-blue-500">/</div>
+                <div className="flex text-lg text-black">
+                  <div className="pr-4 text-lg font-extrabold text-white">УЗНАТЬ ПОДРОБНЕЕ</div>
+                  <div>
+                    <img src="assets/images/slider/arrow-right.svg" alt="" />
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
           <div className={styles.slider__arrow}>
             <div onClick={handleArrowLeft} className="cursor-pointer">

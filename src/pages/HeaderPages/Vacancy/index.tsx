@@ -120,13 +120,14 @@ const Vacancy = () => {
         <div
           className={classNames(styles.vacancy__item, {
             [styles.vacancy__item_active]: isOpen[item.title],
-          })}>
+          })}
+          onClick={() => handlerClick(item.title)}>
           <div className={styles.vacancy__head}>
             <div>
               <div className={styles.vacancy__article}>{item.title}</div>
               <div className={styles.vacancy__describe}>{item.about}</div>
             </div>
-            <div className={styles.vacancy__img} onClick={() => handlerClick(item.title)}>
+            <div className={styles.vacancy__img}>
               <img
                 src={
                   isOpen[item.title]

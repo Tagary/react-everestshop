@@ -7,7 +7,11 @@ const News = () => {
   const hestags = ['АКЗОНОБЕЛ', 'ИНТЕРЬЕРРНЫЕ КРАСКИ'];
   return (
     <div className="max-w-[82.5rem] m-auto mt-40">
-      <div className="text-black text-[40px] mb-12 font-extrabold">Новости</div>
+      <div
+        className=" text-black text-[40px] mb-12 font-extrabold"
+        style={{ textTransform: 'uppercase' }}>
+        Новости
+      </div>
       <div className="flex flex-wrap mb-[100px]">
         <div className="max-w-xs mb-8 pr-6">
           <div className="">
@@ -25,7 +29,9 @@ const News = () => {
           <div className="text-xl min-h-[144px]">{news}</div>
           <div className="flex">
             {hestags.map((item) => (
-              <div className={styles.hestags}>{'# ' + item}</div>
+              <div key={item} className={styles.hestags}>
+                {'# ' + item}
+              </div>
             ))}
           </div>
         </div>

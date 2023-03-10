@@ -1,14 +1,22 @@
-import React from 'react';
+import classNames from 'classnames';
+import React, { useRef } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { useAppDispatch, useAppSelector } from '../../redux/hooks/hooks';
+import { subDirectorySlice } from '../../redux/slices/subDirectorySlice';
 import styles from './Header.module.scss';
 
 const Header = () => {
-  const handleClickCatalog = () => {};
+  const { isOpen } = useAppSelector((state) => state.SubDirectorySlice);
+  const { isopen } = subDirectorySlice.actions;
+  const dispatch = useAppDispatch();
 
   return (
     <header className="bg-color-header min-h-[171px]">
       <div className="max-w-[82.5rem] pt-[32px] pb-[32px] m-auto flex">
         <div className="pr-16 flex items-center">
-          <img className="min-w-[192px] w-full" src="assets/images/header/logo.png" alt="" />
+          <Link to={'/'}>
+            <img className="min-w-[192px] w-full" src="assets/images/header/logo.png" alt="" />
+          </Link>
         </div>
         <div className="flex flex-wrap">
           <div className="max-w-5xl w-full">
@@ -24,36 +32,49 @@ const Header = () => {
                   <div className="pr-2">
                     <img src="assets/images/header/svgmenu/phone.svg" alt="" />
                   </div>
-                  <div>+7 8552 44-84-09</div>
+                  <a href="tel:+78552448409">+7 8552 44-84-09</a>
                 </div>
               </div>
               <div className="flex">
                 <nav className={styles.navbar__top}>
-                  <a href="">Доставка</a>
-                  <a href="">Оплата</a>
-                  <a href="">Прайс-лист</a>
-                  <a href="">Оптовикам</a>
-                  <a href="">Вакансии</a>
-                  <a href="">Новости</a>
-                  <a href="">Контакты</a>
+                  <Link to="delivery">Доставка</Link>
+                  <Link to="payments">Оплата</Link>
+                  <Link to="pricelist">Прайс-лист</Link>
+                  <Link to="wholesalers">Оптовикам</Link>
+                  <Link to="vacancy">Вакансии</Link>
+                  <Link to="news">Новости</Link>
+                  <Link to="contacts">Контакты</Link>
                 </nav>
               </div>
             </div>
           </div>
           <div className="flex pt-7">
             <div
-              className="bg-white rounded-[4px] w-[174px] h-[56px] flex justify-center items-center mr-6"
-              onClick={handleClickCatalog}>
-              <div className="pr-4">
-                <img src="assets/images/header/svgmenu/menu.svg" alt="" />
+              className={classNames(styles.catalogitem, { [styles.catalogitem__active]: isOpen })}
+              onClick={() => dispatch(isopen())}>
+              <div className="pr-4 ">
+                <img
+                  className={styles.imgfilter}
+                  src={
+                    isOpen
+                      ? 'assets/images/subdirectory/cross.svg'
+                      : 'assets/images/header/svgmenu/menu.svg'
+                  }
+                  alt=""
+                />
               </div>
-              <div className=" font-extrabold text-lg">КАТАЛОГ</div>
+              <div
+                className={classNames(styles.catalogtext, {
+                  [styles.catalogtext__active]: isOpen,
+                })}>
+                КАТАЛОГ
+              </div>
             </div>
             <div className="flex items-center bg-[#D8E1EA] rounded-[4px] mr-8">
               <div className="flex justify-between min-w-[575px] ">
                 <input
                   placeholder="Поиск товаров"
-                  className="p-4 bg-inherit outline-none min-w-500px"
+                  className="p-4 bg-inherit outline-none min-w-500px w-full"
                 />
                 <div className="m-2 bg-[#2A79CC] rounded-[4px] flex items-center">
                   <div className={styles.btn__search}>НАЙТИ</div>
@@ -100,28 +121,30 @@ const Header = () => {
                   />
                 </svg>
               </div>
-              <div className={styles.imginterface}>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.63955 3.60547C3.01228 3.60547 2.41561 3.61049 1.82404 3.60547C1.48745 3.60044 1.23757 3.44464 1.08967 3.15314C0.946881 2.87672 0.97748 2.6003 1.16107 2.34399C1.31916 2.1128 1.55375 2.00726 1.83424 2.00223C2.6145 2.00223 3.39986 1.99721 4.18012 2.00223C4.6646 2.00726 4.95529 2.23845 5.07258 2.70585C5.28677 3.53008 5.49076 4.35934 5.71005 5.21875C5.80695 5.21875 5.90894 5.21875 6.00584 5.21875C11.1056 5.21875 16.2002 5.21875 21.3 5.21875C22.4168 5.21875 23.2175 6.21888 22.9472 7.28436C22.325 9.75203 21.6978 12.2147 21.0705 14.6823C20.8512 15.5468 20.1576 16.0695 19.2448 16.0695C15.5832 16.0695 11.9215 16.0695 8.25993 16.0695C7.30627 16.0695 6.6331 15.5468 6.40362 14.6321C5.73555 11.9885 5.06238 9.34494 4.39431 6.70136C4.13423 5.68112 3.89454 4.65586 3.63955 3.60547Z"
-                    fill="#2A79CC"
-                  />
-                  <path
-                    d="M10.8914 20.1052C10.8863 21.1506 10.0142 21.9999 8.95349 21.9949C7.89784 21.9899 7.02579 21.1304 7.02579 20.0901C7.02579 19.0347 7.90804 18.1753 8.97899 18.1853C10.0397 18.2004 10.8965 19.0598 10.8914 20.1052Z"
-                    fill="#2A79CC"
-                  />
-                  <path
-                    d="M18.6481 18.1904C19.7089 18.1954 20.5758 19.0498 20.5758 20.0951C20.5758 21.1506 19.6936 22.01 18.6226 21.9999C17.567 21.9899 16.7051 21.1304 16.7051 20.0851C16.7153 19.0397 17.5925 18.1853 18.6481 18.1904Z"
-                    fill="#2A79CC"
-                  />
-                </svg>
-              </div>
-              <div>{0} ₽</div>
+              <Link to={'cart'}>
+                <div className={styles.imginterface}>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.63955 3.60547C3.01228 3.60547 2.41561 3.61049 1.82404 3.60547C1.48745 3.60044 1.23757 3.44464 1.08967 3.15314C0.946881 2.87672 0.97748 2.6003 1.16107 2.34399C1.31916 2.1128 1.55375 2.00726 1.83424 2.00223C2.6145 2.00223 3.39986 1.99721 4.18012 2.00223C4.6646 2.00726 4.95529 2.23845 5.07258 2.70585C5.28677 3.53008 5.49076 4.35934 5.71005 5.21875C5.80695 5.21875 5.90894 5.21875 6.00584 5.21875C11.1056 5.21875 16.2002 5.21875 21.3 5.21875C22.4168 5.21875 23.2175 6.21888 22.9472 7.28436C22.325 9.75203 21.6978 12.2147 21.0705 14.6823C20.8512 15.5468 20.1576 16.0695 19.2448 16.0695C15.5832 16.0695 11.9215 16.0695 8.25993 16.0695C7.30627 16.0695 6.6331 15.5468 6.40362 14.6321C5.73555 11.9885 5.06238 9.34494 4.39431 6.70136C4.13423 5.68112 3.89454 4.65586 3.63955 3.60547Z"
+                      fill="#2A79CC"
+                    />
+                    <path
+                      d="M10.8914 20.1052C10.8863 21.1506 10.0142 21.9999 8.95349 21.9949C7.89784 21.9899 7.02579 21.1304 7.02579 20.0901C7.02579 19.0347 7.90804 18.1753 8.97899 18.1853C10.0397 18.2004 10.8965 19.0598 10.8914 20.1052Z"
+                      fill="#2A79CC"
+                    />
+                    <path
+                      d="M18.6481 18.1904C19.7089 18.1954 20.5758 19.0498 20.5758 20.0951C20.5758 21.1506 19.6936 22.01 18.6226 21.9999C17.567 21.9899 16.7051 21.1304 16.7051 20.0851C16.7153 19.0397 17.5925 18.1853 18.6481 18.1904Z"
+                      fill="#2A79CC"
+                    />
+                  </svg>
+                </div>
+              </Link>
+              <div>{0}&nbsp;₽</div>
             </div>
           </div>
         </div>
