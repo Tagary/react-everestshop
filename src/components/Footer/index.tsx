@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.scss';
+import logo from '../../assets/footer/logo.png';
+import createsite from '../../assets/footer/sitecreate.png';
 
 const Footer = () => {
   return (
@@ -8,7 +10,7 @@ const Footer = () => {
       <div className="max-w-[82.5rem] m-auto mt-40 pt-[100px] pb-[60px]">
         <div className="flex justify-between">
           <div className="max-w-[450px]">
-            <img src="assets/images/logo.png" alt="" />
+            <img src={logo} alt="" />
           </div>
           <div className={styles.footer__link}>
             <div>
@@ -94,7 +96,7 @@ const Footer = () => {
             <div className="flex">
               <div className="text-[#878C9E] pr-4">Разработка сайта</div>
               <div>
-                <img src="assets/images/footer/sitecreate.png" alt="" />
+                <img src={createsite} alt="" />
               </div>
             </div>
           </div>

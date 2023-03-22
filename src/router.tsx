@@ -12,6 +12,7 @@ import Vacancy from './pages/HeaderPages/Vacancy';
 import NewsList from './pages/HeaderPages/NewsList';
 import CartComponent from './components/CartComponent';
 import OrderComponent from './components/OrderComponent';
+import Product from './pages/Product';
 
 export const router = createBrowserRouter([
   {
@@ -33,6 +34,7 @@ export const router = createBrowserRouter([
       { path: 'news', element: <NewsList /> },
       { path: 'cart', element: <CartComponent /> },
       { path: 'cart/order', element: <OrderComponent /> },
+      { path: 'product/:id', element: <Product /> },
     ],
   },
 ]);

@@ -118,6 +118,7 @@ const Vacancy = () => {
       <div className={styles.vacancy__title}>Вакансии</div>
       {array.map((item) => (
         <div
+          key={item.title}
           className={classNames(styles.vacancy__item, {
             [styles.vacancy__item_active]: isOpen[item.title],
           })}

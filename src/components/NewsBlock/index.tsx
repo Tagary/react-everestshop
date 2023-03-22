@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './NewsBlock.module.scss';
+import { Link } from 'react-router-dom';
 const News = () => {
   const date = '04.05.2022';
   const viewers = 121;
@@ -39,7 +40,9 @@ const News = () => {
       <div className="flex justify-center items-center">
         <div className="text-blue text-[65px] text-blue-500">/</div>
         <div className="flex text-lg text-black">
-          <div className="pr-4 text-lg font-extrabold">ВСЕ НОВОСТИ</div>
+          <div className="pr-4 text-lg font-extrabold">
+            <Link to={'news'}>ВСЕ НОВОСТИ</Link>
+          </div>
           <div>
             <img src="assets/images/mininews/arrow-right.svg" alt="" />
           </div>

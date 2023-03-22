@@ -1,21 +1,27 @@
 import classNames from 'classnames';
 import React, { useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../redux/hooks/hooks';
 import { subDirectorySlice } from '../../redux/slices/subDirectorySlice';
 import styles from './Header.module.scss';
+import logo from '../../assets/header/logo.png';
+import geo from '../../assets/header/svgmenu/geo.svg';
+import phone from '../../assets/header/svgmenu/phone.svg';
+import menu from '../../assets/header/svgmenu/menu.svg';
+import cross from '../../assets/header/svgmenu/cross.svg';
 
 const Header = () => {
   const { isOpen } = useAppSelector((state) => state.SubDirectorySlice);
   const { isopen } = subDirectorySlice.actions;
   const dispatch = useAppDispatch();
+  const { pathname } = useLocation();
 
   return (
     <header className="bg-color-header min-h-[171px]">
       <div className="max-w-[82.5rem] pt-[32px] pb-[32px] m-auto flex">
         <div className="pr-16 flex items-center">
           <Link to={'/'}>
-            <img className="min-w-[192px] w-full" src="assets/images/header/logo.png" alt="" />
+            <img className="min-w-[192px] w-full" src={logo} alt="" />
           </Link>
         </div>
         <div className="flex flex-wrap">
@@ -24,13 +30,13 @@ const Header = () => {
               <div className="flex">
                 <div className="flex items-center pr-5">
                   <div className="pr-2">
-                    <img src="assets/images/header/svgmenu/geo.svg" alt="" />
+                    <img src={geo} alt="" />
                   </div>
                   <div>Казань</div>
                 </div>
                 <div className="flex items-center">
                   <div className="pr-2">
-                    <img src="assets/images/header/svgmenu/phone.svg" alt="" />
+                    <img src={phone} alt="" />
                   </div>
                   <a href="tel:+78552448409">+7 8552 44-84-09</a>
                 </div>
@@ -53,15 +59,7 @@ const Header = () => {
               className={classNames(styles.catalogitem, { [styles.catalogitem__active]: isOpen })}
               onClick={() => dispatch(isopen())}>
               <div className="pr-4 ">
-                <img
-                  className={styles.imgfilter}
-                  src={
-                    isOpen
-                      ? 'assets/images/subdirectory/cross.svg'
-                      : 'assets/images/header/svgmenu/menu.svg'
-                  }
-                  alt=""
-                />
+                <img className={styles.imgfilter} src={isOpen ? cross : menu} alt="" />
               </div>
               <div
                 className={classNames(styles.catalogtext, {
