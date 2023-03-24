@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React, { useRef } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../redux/hooks/hooks';
 import { subDirectorySlice } from '../../redux/slices/subDirectorySlice';
 import styles from './Header.module.scss';
@@ -12,7 +12,9 @@ import cross from '../../assets/header/svgmenu/cross.svg';
 
 const Header = () => {
   const { isOpen } = useAppSelector((state) => state.SubDirectorySlice);
+  const { totalPrice } = useAppSelector((state) => state.CartSlice);
   const { isopen } = subDirectorySlice.actions;
+
   const dispatch = useAppDispatch();
   const { pathname } = useLocation();
 
@@ -142,7 +144,7 @@ const Header = () => {
                   </svg>
                 </div>
               </Link>
-              <div>{0}&nbsp;₽</div>
+              <div>{totalPrice}&nbsp;₽</div>
             </div>
           </div>
         </div>

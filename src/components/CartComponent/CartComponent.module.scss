@@ -9,6 +9,9 @@
             text-transform: uppercase;
         }
     }
+    &__imgcart {
+        max-width: 200px;
+    }
     &__trashes {
         display: flex;
         gap: 8px;

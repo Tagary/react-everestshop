@@ -10,4 +10,5 @@ export default interface IProduct {
   thumbnail: string;
   brand: string;
   category: string;
+  count: number;
 }

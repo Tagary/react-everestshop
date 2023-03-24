@@ -4,9 +4,11 @@ import { categoryAPI } from './services/CategoryService';
 import { commentsApi } from './services/CommentsService';
 import { productsAPI } from './services/ProductsService';
 import SubDirectorySlice from './slices/subDirectorySlice';
+import CartSlice from './slices/cartSlice';
 
 const rootReducer = combineReducers({
   SubDirectorySlice,
+  CartSlice,
   [catalogAPI.reducerPath]: catalogAPI.reducer,
   [categoryAPI.reducerPath]: catalogAPI.reducer,
   [productsAPI.reducerPath]: productsAPI.reducer,

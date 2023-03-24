@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Ask from './Ask';
 import Describe from './Descirbe';
 import Reviwes from './Reviews';
@@ -7,9 +7,13 @@ import styles from './Product.module.scss';
 import classNames from 'classnames';
 import { useLocation } from 'react-router-dom';
 import { catalogAPI } from '../../redux/services/CatalogService';
+import { useAppDispatch, useAppSelector } from '../../redux/hooks/hooks';
+import { cartSlice } from '../../redux/slices/cartSlice';
 
 const ProductComponent = () => {
   const { pathname } = useLocation();
+  const { addToCart } = cartSlice.actions;
+  const dispatch = useAppDispatch();
 
   const { data: product, isLoading } = catalogAPI.useFetchOneProductQuery(
     pathname.split('/product/')[1],
@@ -108,7 +112,9 @@ const ProductComponent = () => {
                   </div>
                   <div className={styles.product__percent}>-5%</div>
                 </div>
-                <div className={styles.product__add}>Добавить в корзину</div>
+                <div className={styles.product__add} onClick={() => dispatch(addToCart(product!))}>
+                  Добавить в корзину
+                </div>
               </div>
             </div>
           </div>
